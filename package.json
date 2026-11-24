@@ -1,0 +1,59 @@
+{
+	"name": "n8n-nodes-kovered",
+	"version": "0.1.0",
+	"description": "n8n community node for Kovered \u2014 stock ticker mentions, hype, and history",
+	"license": "MIT",
+	"homepage": "https://www.kovered.ai",
+	"keywords": [
+		"n8n-community-node-package",
+		"n8n",
+		"kovered",
+		"stocks",
+		"alt-data"
+	],
+	"author": {
+		"name": "Kovered",
+		"email": "support@youtubetranscript.dev",
+		"url": "https://www.kovered.ai"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Youtube-Transcript-Dev/n8n-nodes-kovered.git"
+	},
+	"publishConfig": {
+		"access": "public",
+		"provenance": true
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/KoveredApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/Kovered/Kovered.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "^0.23.0",
+		"eslint": "^9.39.4",
+		"prettier": "^3.8.3",
+		"release-it": "^19.0.4",
+		"typescript": "^5.9.3"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}
