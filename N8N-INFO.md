@@ -2,6 +2,7 @@
 
 | Field | Value |
 | --- | --- |
+| GitHub | https://github.com/Youtube-Transcript-Dev/n8n-nodes-kovered |
 | npm package | `n8n-nodes-kovered@0.1.0` |
 | Install | Settings → Community nodes → `n8n-nodes-kovered` |
 | Site | https://www.kovered.ai |
