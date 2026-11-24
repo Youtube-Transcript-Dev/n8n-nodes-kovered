@@ -40,16 +40,16 @@ export class Kovered implements INodeType {
 						description: 'Return account email and credits remaining',
 					},
 					{
-						name: 'List Stocks',
-						value: 'listStocks',
-						action: 'List stocks',
-						description: 'List tracked tickers',
-					},
-					{
 						name: 'Get Stock',
 						value: 'getStock',
 						action: 'Get a stock',
 						description: 'Latest StockTwits, Reddit, and hype for one ticker',
+					},
+					{
+						name: 'Get Stock History',
+						value: 'getStockHistory',
+						action: 'Get stock history',
+						description: 'Daily StockTwits history for a ticker',
 					},
 					{
 						name: 'Get Stock Hype',
@@ -58,10 +58,10 @@ export class Kovered implements INodeType {
 						description: 'Hype score and history for a ticker',
 					},
 					{
-						name: 'Get Stock History',
-						value: 'getStockHistory',
-						action: 'Get stock history',
-						description: 'Daily StockTwits history for a ticker',
+						name: 'List Stocks',
+						value: 'listStocks',
+						action: 'List stocks',
+						description: 'List tracked tickers',
 					},
 				],
 				default: 'getStock',
